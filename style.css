@@ -1,0 +1,59 @@
+body{
+    font-family: 'Lora', serif;
+}
+
+body, html{
+    height: 100%;
+}
+
+.parallax {
+    /* The image used */
+    background-image: url('Agave.jpg');
+  
+    /* Full height */
+    height: 100%; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+.nav-link{
+    color: black !important;
+    font-size: 1.5em;
+    
+    transition: color .5s, letter-spacing .5s;
+
+    letter-spacing: 0px;
+}
+
+.nav-link:hover{
+    color: royalblue !important;
+
+    transition: color .5s, letter-spacing .5s;
+
+    letter-spacing: 1.5px;
+}
+
+.navbar-expand-sm, .navbar-expand-md{
+    border-bottom: 3px solid royalblue;
+}
+
+nav.navbar, .navbar-light, .navbar-expand-md, .bg-light{
+    background-color: white !important;
+}
+
+
+/* Media Queries */
+@media (max-width: 600px){
+
+    /* Controlar tamanio del logo en celular */
+#Logotipo{
+    width: 60%;
+}
+#LogotipoA{
+    width: 70%;
+}
+}
