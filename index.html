@@ -6,9 +6,10 @@
     <title>Tequilera Punto Azul</title>
 
 <!--Google Fonts-->
-    <!--Lora, Merriweather, Playfair Display-->
+    <!--Lora, Merriweather, Playfair Display = serif
+        Noto Sans KR = sans-serif-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Lora&family=Merriweather&family=Playfair+Display&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Lora&family=Merriweather&family=Noto+Sans+KR&family=Playfair+Display&display=swap" rel="stylesheet"> 
 
 <!--Bootsrap CSS-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -64,7 +65,7 @@
         </div>
 
         <!--Si elementos empiezan a apilarse cambiar width del logo (img)-->
-        <a href="/" class="navbar-brand mx-auto d-block text-center pr-5" id="LogotipoA"><img src="Logo.png" alt="Logo" width="60%" id="Logotipo"></a>
+        <a href="/" class="navbar-brand mx-auto d-block text-center pr-4" id="LogotipoA"><img src="Logo.png" alt="Logo" width="60%" id="Logotipo"></a>
 
         <div class="navbar-collapse collapse dual-nav order-2 w-50">
             <ul class="nav navbar-nav ml-auto">
@@ -79,11 +80,26 @@
     <!-- </div> -->
 </nav>
 
-<div class="parallax">
-    <div style="width: 100%; background-color: rgba(0, 0, 0, 0.658);"></div>
-</div>
+<div class="parallax" style="width: 100%; background-color: rgba(0, 0, 0, 0.658);"></div>
 
-<div class="container-fluid" style="height: 200%;"></div>
+<div class="container-fluid" id="Nosotros">
+    <div class="row" style=" background-color: rgb(252, 202, 70);">
+        <div class="col" style="padding: 1.3em; font-family: Merriweather; text-align: center;">
+            <h1 style="font-size: 2.5em;">Nosotros</h1>
+        </div>
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-4" style="padding: 2em; padding-top: 13em ;font-family: Noto Sans KR;">
+            <h1>Procesos de calidad</h1>
+            <p>Nuestros procesos de preparación son los mejores del mercado, 
+                utilizamos lo último en tecnología para el destilado, procesamiento y elaboración del tequila
+            </p>
+        </div>
+        <div class="col-sm-8 px-0"> <img src="Destiladora.jpg" alt="fruta" class="img-fluid" style="width: 100%; padding-left: 0px; padding-right: 0px;"></div>
+    </div>
+</div>
  
  
     <!--Bootsrap JQuery, Popper etc. -->
