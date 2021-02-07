@@ -10,7 +10,20 @@ html{
     scroll-behavior: smooth;
 }
 
-.parallax {
+.textoEnImagen{
+    text-align: center; 
+    margin: auto;
+    font-family: Merriweather; 
+    font-size: 6em; 
+    font-weight: bold;
+    color: white; 
+    font-style: italic;
+    letter-spacing: .08em;
+    text-shadow: .05em .05em royalblue;
+    padding-top: 2em;
+}
+
+.sinParallax {
     /* The image used */
     background-image: url('Agave.jpg');
   
@@ -18,10 +31,16 @@ html{
     height: 100%; 
   
     /* Create the parallax scrolling effect */
-    background-attachment: fixed;
+    background-attachment: scroll;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+  }
+
+  .parallax-window{
+      /* La libreria JS */
+    min-height: 700px;
+    background: transparent;
   }
 
 .nav-link{
@@ -53,12 +72,9 @@ nav.navbar, .navbar-light, .navbar-expand-md, .bg-light{
 
 /* Media Queries */
 @media (max-width: 600px){
-
-    /* Quitar efecto parallax en celular */
-.parallax {
-    background-attachment: scroll;
+.textoEnImagen{
+    font-size: 1.7em;
 }
-
     /* Controlar tamanio del logo en celular */
 #Logotipo{
     width: 70%;

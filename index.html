@@ -47,7 +47,7 @@
 3 - Navbar with brand center, links on left and right that all collapse into the vertical mobile
     menu
 -->
-<nav class="navbar navbar-light navbar-expand-md bg-light justify-content-between fixed-top">
+<nav class="navbar navbar-light navbar-expand-md bg-light justify-content-between sticky-top">
     <!-- <div class="container-fluid"> -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-nav">
             <span class="navbar-toggler-icon"></span>
@@ -80,31 +80,52 @@
     <!-- </div> -->
 </nav>
 
-<div class="parallax" style="width: 100%; background-color: rgba(0, 0, 0, 0.658);"></div>
+<div id="parallax1"></div>
+<!-- <div id="parallax1" class="parallax" style="width: 100%; background-color: rgba(0, 0, 0, 0.658);"></div> -->
+<div id="parallax1JS" class="parallax-window" data-parallax="scroll" data-image-src="Agave.jpg">
+    <h1 class="textoEnImagen">Eslogan</h1>
+</div>
 
-<div class="container-fluid" id="Nosotros">
+
+<!-- <div class="container-fluid" id="Nosotros">
     <div class="row" style=" background-color: rgb(252, 202, 70);">
         <div class="col" style="padding: 1.3em; font-family: Merriweather; text-align: center;">
             <h1 style="font-size: 2.5em;">Nosotros</h1>
         </div>
     </div>
-</div>
+</div> -->
 <div class="container-fluid">
-    <div class="row">
-        <div class="col-sm-4" style="padding: 2em; padding-top: 13em ;font-family: Noto Sans KR;">
+    <div class="row" id="demo">
+        <div class="col-sm-5" style="padding: 2em; font-family: Noto Sans KR; margin: auto; text-align: center;">
             <h1>Procesos de calidad</h1>
-            <p>Nuestros procesos de preparación son los mejores del mercado, 
-                utilizamos lo último en tecnología para el destilado, procesamiento y elaboración del tequila
+            <p>lorem ipsum dolor lorem ipsum dolor
             </p>
         </div>
-        <div class="col-sm-8 px-0"> <img src="Destiladora.jpg" alt="fruta" class="img-fluid" style="width: 100%; padding-left: 0px; padding-right: 0px;"></div>
+        <div class="col-sm-7 px-0"> <img src="Destiladora.jpg" alt="fruta" class="img-fluid" style="width: 100%; padding-left: 0px; padding-right: 0px;"></div>
     </div>
 </div>
- 
- 
+
+
     <!--Bootsrap JQuery, Popper etc. -->
  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+ <!--Parallax JS, solo en pcs-->
+ <script src="parallax.js-1.5.0/parallax.min.js"></script>
+ <script src="parallax.js-1.5.0/parallax.js"></script>
+
+ <script>
+    // quitar efecto parallax en celular
+    var jmediaquery = window.matchMedia( "(min-width: 600px)" )
+    if (!jmediaquery.matches) {
+        document.getElementById("parallax1JS").remove();
+        document.getElementById("parallax1").setAttribute("class","sinParallax textoEnImagen");
+        document.getElementById("parallax1").innerHTML = '<h1 class="textoEnImagen">Eslogan</h1>';
+    }
+    else {
+    }
+</script>
+
 </body>
 </html>
