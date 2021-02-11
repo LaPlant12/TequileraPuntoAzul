@@ -83,8 +83,8 @@
 <div id="parallax1"></div>
 <!-- <div id="parallax1" class="parallax" style="width: 100%; background-color: rgba(0, 0, 0, 0.658);"></div> -->
 <div id="parallax1JS" class="parallax-window" data-parallax="scroll" data-image-src="Agave.jpg">
-    <h1 class="textoEnImagen">Eslogan</h1>
-    <p class="textoEnImagen" style="padding-top: 1em; font-size: 2em; font-style: normal; padding-left: 3em; letter-spacing: normal;">Excelencia y calidad en producción de tequila</p>
+    <h1 class="textoEnImagen" id="Eslogan">Eslogan</h1>
+    <p class="textoEnImagen" id="EsloganTexto">Excelencia y calidad en producción de tequila</p>
 </div>
 
 
@@ -125,7 +125,8 @@
     if (!jmediaquery.matches) {
         document.getElementById("parallax1JS").remove();
         document.getElementById("parallax1").setAttribute("class","sinParallax textoEnImagen");
-        document.getElementById("parallax1").innerHTML = '<h1 class="textoEnImagen">Eslogan</h1>';
+        document.getElementById("parallax1").innerHTML = 
+        '<h1 class="textoEnImagen" id="Eslogan">Eslogan</h1> <p class="textoEnImagen" id="EsloganTexto">Excelencia y calidad en producción de tequila</p>';
     }
     else {
     }

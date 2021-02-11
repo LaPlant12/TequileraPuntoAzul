@@ -10,20 +10,6 @@ html{
     scroll-behavior: smooth;
 }
 
-.textoEnImagen{
-    /* text-align: center;  */
-    padding-left: 1em;
-    margin: auto;
-    font-family: Merriweather; 
-    font-size: 6em; 
-    font-weight: bold;
-    color: white; 
-    font-style: italic;
-    letter-spacing: .04em;
-    text-shadow: .05em .05em royalblue;
-    padding-top: 2em;
-}
-
 .sinParallax {
     /* The image used */
     background-image: url('Agave.jpg');
@@ -70,11 +56,41 @@ nav.navbar, .navbar-light, .navbar-expand-md, .bg-light{
     background-color: white !important;
 }
 
+.textoEnImagen{
+    /* text-align: center;  */
+    padding-left: 1em;
+    margin: auto;
+    font-family: Merriweather; 
+    font-size: 6em; 
+    font-weight: bold;
+    color: white; 
+    font-style: italic;
+    letter-spacing: .04em;
+    text-shadow: .05em .05em royalblue;
+    padding-top: 2em;
+}
+
+#EsloganTexto{
+    padding-top: 1em; 
+    font-size: 2em; 
+    font-style: normal;
+    padding-left: 3em;
+    letter-spacing: normal;
+}
+
 
 /* Media Queries */
 @media (max-width: 600px){
 .textoEnImagen{
     font-size: 1.7em;
+    text-align: center;
+    padding-left: 0px;
+}
+#EsloganTexto{
+    font-size: .8em;
+    padding-left: 0em;
+    padding: .5em;
+    padding-top: 1em; 
 }
     /* Controlar tamanio del logo en celular */
 #Logotipo{
