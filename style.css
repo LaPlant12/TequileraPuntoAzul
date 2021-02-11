@@ -11,14 +11,15 @@ html{
 }
 
 .textoEnImagen{
-    text-align: center; 
+    /* text-align: center;  */
+    padding-left: 1em;
     margin: auto;
     font-family: Merriweather; 
     font-size: 6em; 
     font-weight: bold;
     color: white; 
     font-style: italic;
-    letter-spacing: .08em;
+    letter-spacing: .04em;
     text-shadow: .05em .05em royalblue;
     padding-top: 2em;
 }
