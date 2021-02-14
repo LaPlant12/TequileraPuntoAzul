@@ -98,9 +98,9 @@
 
 <div class="container-fluid" style="background-color: rgb(252, 203, 70); position: relative;" >
     <!-- Span usado para que al momento de picarle a nosotros se posicione bien, elemento padre debe ser relative -->
-    <span id="Nosotros" style="position: absolute; top: -80px;"></span> 
+    <span  style="position: absolute; top: -80px;"></span> 
 
-    <div class="row">
+    <div id="Nosotros" class="row">
         <div class="col-sm-4" style="font-family: Roboto Condensed; padding: 3.2em;">
             <h1 style="font-size: 5em;">Nosotros</h1>
             <br>
@@ -111,53 +111,51 @@
     </div>
 </div>
 
-<div class="container-fluid px-0" style="background-color: black;">
-    <div class="row">
-        <div class="col-sm-7">
+<div class="container-fluid">
+    <div id="Planta" class="row">
+        <div class="col-sm-7 px-0">
 
-            <div id="car" class="carousel slide" >
+            <div id="car" class="carousel slide">
     
-                <!-- Indicadores -->
-            <ul class="carousel-indicators">
-              <li data-target="#car" data-slide-to="0" class="active"></li>
-              <li data-target="#car" data-slide-to="1"></li>
-              <li data-target="#car" data-slide-to="2"></li>
-            </ul>
-          
-          
-            <!-- El slideshow -->
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="FotosOscar/Foto1.jpeg" alt="Tequilera1" width="1000px" height="450">
-              </div>
-              <div class="carousel-item">
-                <img src="FotosOscar/Foto2.jpeg" alt="Tequilera2" width="1000px" height="450">
-              </div>
-              <div class="carousel-item">
-                <img src="FotosOscar/Foto3.jpeg" alt="Tequilera3" width="1000px" height="450">
-              </div>
-            </div>
-          
-            <!-- Controles de izquierda y derecha -->
-            <a class="carousel-control-prev" href="#car" data-slide="prev">
-              <span class="carousel-control-prev-icon"></span>
-            </a>
-            <a class="carousel-control-next" href="#car" data-slide="next">
-              <span class="carousel-control-next-icon"></span>
-            </a>
-          
+                    <!-- Indicadores -->
+                <ul class="carousel-indicators">
+                    <li data-target="#car" data-slide-to="0" class="active"></li>
+                    <li data-target="#car" data-slide-to="1"></li>
+                    <li data-target="#car" data-slide-to="2"></li>
+                </ul>
+            
+            
+                <!-- El slideshow -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="FotosOscar/Foto1.jpeg" alt="Tequilera1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="FotosOscar/Foto2.jpeg" alt="Tequilera2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="FotosOscar/Foto3.jpeg" alt="Tequilera3">
+                    </div>
+                </div>
+            
+                <!-- Controles de izquierda y derecha -->
+                <a class="carousel-control-prev" href="#car" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#car" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
           </div>
         </div>
     
-        <div class="col-sm-5 textoPlanta" >
-            <h1 style="font-size: 4em;">Planta</h1>
+        <div class="col-sm-5 textoPlanta" style="padding: 3.2em;" >
+            <h1 style="font-size: 5em;">Planta</h1>
             <br>
             <p style="font-size: 1.4em;">Nuestra tequilera cuenta con maquinaria profesional de última tecnología que a su vez es operado por personal con años de experiencia, aseguran la calidad del producto final</p>
         </div>
     </div>
 </div>
 
-<div id="demo" style="height: 400%; background-color: royalblue;"></div>
 
  
 

@@ -39,7 +39,7 @@ html{
     letter-spacing: 0px;
 }
 
-.nav-link:hover, .active{
+.nav-link:hover, ul .active{
     color: royalblue !important;
 
     transition: color .5s, letter-spacing .5s;
@@ -81,7 +81,6 @@ nav.navbar, .navbar-light, .navbar-expand-md, .bg-light{
 
 .carousel-inner img{
     width: 100%;
-    height: 100%;
 }
 
 .textoPlanta{
@@ -89,27 +88,30 @@ nav.navbar, .navbar-light, .navbar-expand-md, .bg-light{
     background-color: black;
     font-family: "Roboto Condensed";
 
-    padding: 2em;
 }
 
 /* Media Queries */
 @media (max-width: 600px){
-.textoEnImagen{
-    font-size: 1.7em;
-    text-align: center;
-    padding-left: 0px;
-}
-#EsloganTexto{
-    font-size: .8em;
-    padding-left: 0em;
-    padding: .5em;
-    padding-top: 1em; 
-}
-    /* Controlar tamanio del logo en celular */
-#Logotipo{
-    width: 70%;
-}
-#LogotipoA{
-    width: 70%;
-}
+    .textoEnImagen{
+        font-size: 1.7em;
+        text-align: center;
+        padding-left: 0px;
+    }
+    #EsloganTexto{
+        font-size: .8em;
+        padding-left: 0em;
+        padding: .5em;
+        padding-top: 1em; 
+    }
+        /* Controlar tamanio del logo en celular */
+    #Logotipo{
+        width: 70%;
+    }
+    #LogotipoA{
+        width: 70%;
+    }
+
+    .textoPlanta{
+        text-align: center;
+    }
 }
