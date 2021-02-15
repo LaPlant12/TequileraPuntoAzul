@@ -57,7 +57,10 @@ nav.navbar, .navbar-light, .navbar-expand-md, .bg-light{
     background-color: white !important;
 }
 
-
+/* crea un offset al seleccionar un anchor */
+.container-fluid{
+    scroll-margin: 5em;
+}
 
 .textoEnImagen{
     /* text-align: center;  */
@@ -69,7 +72,7 @@ nav.navbar, .navbar-light, .navbar-expand-md, .bg-light{
     color: white; 
     font-style: italic;
     letter-spacing: .04em;
-    text-shadow: .05em .05em rgb(35, 54, 128);
+    text-shadow: 3px 3px rgb(35, 54, 128);
     padding-top: 2em;
 }
 
@@ -99,7 +102,7 @@ hr{
     width: 100%;
 }
 
-.col{
+.row{
     font-family: "Roboto Condensed" sans-serif;
 }
 
@@ -107,11 +110,11 @@ h1{
     font-size: 5em;
 }
 
-.col h2{
+.row h2{
     font-size: 3em;
 }
 
-.col p{
+.row p{
     font-size: 1.3em;
 }
 
